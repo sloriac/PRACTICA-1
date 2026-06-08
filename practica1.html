@@ -10,6 +10,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vince Gilligan</title>
+
+    <!--Permite usar font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
 </head>
 
 <!--El body contiene todo lo que se ve en la página web, no debe quedar contenido importante por fuera del body-->
@@ -40,7 +44,8 @@
 
         <hr> <!--Separa los contenidos de la página mediante una línea horizontal-->
 
-        <h3 id="BreakingBad">Breaking Bad</h3> <!--Subtítulo H3-->
+        
+        <h3 id="BreakingBad"><i class="fa-solid fa-hat-cowboy" aria-hidden="true"></i>Breaking Bad</h3> <!--Subtítulo H3-->
 
         <h4>Descripción</h4> <!--Subtítulo H4-->
 
@@ -90,7 +95,7 @@
 
         <hr> <!--Línea de separación horizontal-->
 
-        <h3 id="BetterCallSaul">Better Call Saul!</h3> <!--Subtítulo H3-->
+        <h3 id="BetterCallSaul"><i class="fa-solid fa-scale-unbalanced-flip" aria-hidden="true"></i>Better Call Saul!</h3> <!--Subtítulo H3-->
         
         <h4>Descripción</h4> <!--Subtítulo H4-->
         
@@ -132,7 +137,7 @@
         <img src="src\img\Better Call Saul.webp" alt="Jimmy McGill en medio de los 2 mundos de la historia, entre bufetes y carteles">
 
         <p>La serie de Better Call Saul es reconocida por una canción muy particular, la cual refleja la situación sentimental del personaje principal (Jimmy McGill) y su pareja (Kim Wexler).</p>
-
+        <i class="fa-brands fa-itunes-note" aria-hidden="true"></i>
         <p>La canción es: Somethin' Stupid, y la puede escuchar a continuación:</p>
 
         <audio 
@@ -152,59 +157,65 @@
 
 
             <!--Fila principal de la tabla-->
-            <tr> <!--Fila 1-->
-                <th>Serie</th> <!--th: Encabezado-->
-                <th>Temporada</th> 
-                <th>Capítulo</th>
-                <th>Nombre</th>
-                <th>Rating</th>
-            </tr> 
+            <thead> <!--Indica que es el encabezado de la tabla-->
+                <tr> <!--Fila 1-->
+                    <th>Serie</th> <!--th: Encabezado-->
+                    <th>Temporada</th> 
+                    <th>Capítulo</th>
+                    <th>Nombre</th>
+                    <th>Rating</th>
+                </tr> 
+            </thead>
+            
+            <tbody> <!--Indica  que es eel cuerpo de datos de la tabla-->
+                <!--Fila 2-->
+                <tr>
+                    <td>Breaking Bad</td> <!--td: Dato común parte de un encabezado-->
+                    <td>5</td>
+                    <td>14</td>
+                    <td>Ozymandias</td>
+                    <td>10/10</td>
+                </tr>
 
-            <!--Fila 2-->
-            <tr>
-                <td>Breaking Bad</td> <!--td: Dato común parte de un encabezado-->
-                <td>5</td>
-                <td>14</td>
-                <td>Ozymandias</td>
-                <td>10/10</td>
-            </tr>
+                <!--Fila 3-->
+                <tr>
+                    <td>Better Call Saul!</td> <!--td: Dato común parte de un encabezado-->
+                    <td>6</td>
+                    <td>7</td>
+                    <td>Plan & Execution</td>
+                    <td>9.9/10</td>
+                </tr>
 
-            <!--Fila 3-->
-            <tr>
-                <td>Better Call Saul!</td> <!--td: Dato común parte de un encabezado-->
-                <td>6</td>
-                <td>7</td>
-                <td>Plan & Execution</td>
-                <td>9.9/10</td>
-            </tr>
+                <!--Fila 4-->
+                <tr>
+                    <td>Breaking Bad</td> <!--td: Dato común parte de un encabezado-->
+                    <td>5</td>
+                    <td>16</td>
+                    <td>Felina</td>
+                    <td>9.9/10</td>
+                </tr>
 
-            <!--Fila 4-->
-            <tr>
-                <td>Breaking Bad</td> <!--td: Dato común parte de un encabezado-->
-                <td>5</td>
-                <td>16</td>
-                <td>Felina</td>
-                <td>9.9/10</td>
-            </tr>
+                <!--Fila 5-->
+                <tr>
+                    <td>Breaking Bad</td> <!--td: Dato común parte de un encabezado-->
+                    <td>4</td>
+                    <td>13</td>
+                    <td>Face Off</td>
+                    <td>9.8/10</td>
+                </tr>
 
-            <!--Fila 5-->
-            <tr>
-                <td>Breaking Bad</td> <!--td: Dato común parte de un encabezado-->
-                <td>4</td>
-                <td>13</td>
-                <td>Face Off</td>
-                <td>9.8/10</td>
-            </tr>
+                <!--Fila 6-->
+                <tr>
+                    <td>Breaking Bad</td> <!--td: Dato común parte de un encabezado-->
+                    <td>3</td>
+                    <td>7</td>
+                    <td>One Minute</td>
+                    <td>9.6/10</td>
+                </tr>
 
-            <!--Fila 6-->
-            <tr>
-                <td>Breaking Bad</td> <!--td: Dato común parte de un encabezado-->
-                <td>3</td>
-                <td>7</td>
-                <td>One Minute</td>
-                <td>9.6/10</td>
-            </tr>
+            </tbody>
 
+            
         </table>
 
 
@@ -226,13 +237,3 @@
     
 </body>
 </html>
-
-
-
-
-
-
-
-
-<!--Quedé en utilizar íconos decorativos-->
-<!--Preguntar qué es thead y tbody-->
