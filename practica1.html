@@ -19,6 +19,57 @@
 <!--El body contiene todo lo que se ve en la página web, no debe quedar contenido importante por fuera del body-->
 <body>
 
+
+
+    <!--Comentario estructurado o informe sobre la ayuda de la IA-->
+        <!-- === INFORME SOBRE RECOMENDACIONES DADAS POR IA === 
+        -IA utilizada: Claude Sonnet 4.6
+
+        === RECOMENDACIONES PARA LA PÁGINA "trailers.html" ===
+
+        === RECOMENDACIONES CONCRETAS Y APLICADAS AL CÓDIGO === 
+        -1 Envolver cada serie en <section> con aria-labelledby
+        -2 Mover la imagen dentro de un <li> o usar <figure>
+        -3 Agregar un enlace "Saltar al contenido"
+        -4 Agregar aria-label al elemento <audio>
+        -5 Agregar scope a los <th> de la tabla
+        
+        === INFORME PERSONAL SOBRE RECOMENDACIONES BRINDADAS ===
+        -Personalmente considero que Claude acertó eficazmente los errores más importantes encontrados
+        en el código "practica1.html", abordó todas las secciones del código de forma cautelosa, la IA 
+        me brindó varias correciones útiles para cumplir con la estructura HTML5 de manera más profesional,
+        como la reestructuración de la imagen colocada dentro de la lista como tal, y no dentro de un <li>
+        utilizando la etiqueta <figure>, también consideré útil el agregar labels a las secciones que 
+        lo requerían (como a los títulos de los section, a la imagen, y a los archivos mutimedia), mejorando 
+        en gran medida la accesibilidad para los lectores de página, también incluí la sección <section> 
+        para mejorar la estructura de la página y a su vez cumplir con el modelo HTML5, Claude me
+        recomendó que utilizara la etiqueta <span>, en vez de la etiqueta <i> para colocar los íconos, 
+        sin embargo, decidí no realizar el cambio, esto debido a que temía que ocurriese algún error 
+        con la "librería" de donde se brindan los íconos de font awesome, además de que la docente no 
+        mencionó esta etiqueta ni nos recomendó utilizarla, además de que no era un error 
+        importante para la estructura o accesibilidad de la página, era más un detalle que un error, 
+        al menos así lo consideré yo, también me recomendó mover el ícono de música dentro de un texto,
+        para que se interpretara en un mejor contexto dentro de la página web, Claude también me mencionó
+        el realizar un enlace para que se dirigiera al contenido principal desde un inicio, para que el 
+        usuario no deba tabular a lo largo de todos los enlaces de la barra de navegación, haciendo la 
+        página más "user friendly". Al mismo tiempo que identifico debilidades en el código, también
+        realizó un enfoque en los puntos fuertes del mismo, como lo mencioné anteriormente, honestamente 
+        no identifiqué sesgos o desvíos del tema por parte de la IA, al contrario, me colaboró en gran 
+        medida a comprender más sobre HTML y su modelo estructural, la importancia de colocar labels en
+        archivos multimedia y en los apartados <section>, entre muchos otros aspectos técnicos que pasé
+        por alto en un inicio, pero ya corregidos me hacen bastante sentido, y aprendí para no volver a 
+        cometer errores importantes.  
+        -->
+
+    <!---->
+    <!-- 
+        VERIFICACIÓN DE CRITERIOS: 
+        - Requerimientos: Se incluyen header, nav, main, footer; tabla 5x5, lista ordenada, 2 imágenes, 1 archivo multimedia (audio). 
+        - Validación: Se probó en Chrome, Brave y Edge. Todos los enlaces y archivos multimedia funcionan. 
+    --> 
+
+    <a href="#contenido-principal">Saltar al contenido principal</a>
+
     <!--Título principal y único H1 de la página-->
     <header>
         <h1>Series del universo de Vince Gilligan</h1>
@@ -33,118 +84,134 @@
         <!--Enlace externo-->
         <a href="trailers.html">Trailers de ambas series</a>
         <!--Enlace a otras página web-->
-        <a href="https://www.imdb.com/es/title/tt0903747/">Breaing Bad en IMDb</a>
+        <a href="https://www.imdb.com/es/title/tt0903747/">Breaking Bad en IMDb</a>
         <a href="https://www.imdb.com/es/title/tt3032476/">Better Call Saul! en IMDb</a>
     </nav>
 
     <!--Sección que contiene la información principal-->
-    <main>
+    <main id="contenido-principal">
 
         <h2>Series creadas por Vince Gilligan</h2> <!--Subtítulo H2-->
 
         <hr> <!--Separa los contenidos de la página mediante una línea horizontal-->
 
-        
-        <h3 id="BreakingBad"><i class="fa-solid fa-hat-cowboy" aria-hidden="true"></i>Breaking Bad</h3> <!--Subtítulo H3-->
+        <section id="BreakingBad" aria-labelledby="titulo-bb">
 
-        <h4>Descripción</h4> <!--Subtítulo H4-->
+            <h3 id="titulo-bb"><i class="fa-solid fa-hat-cowboy" aria-hidden="true"></i>Breaking Bad</h3> <!--Subtítulo H3-->
 
-        <!--Párrafo para texto largo o corto-->
-        <p>Esta serie narra la historia de Walter White, un profesor de química de 50 años diágnosticado con cáncer de pulmón, este piensa que no tiene nada que perder, por lo que para pagar su tratamiento y asegurar un buen futuro para su familia, utiliza sus destrezas en la química para cocinar y vender metanfetamina junto a Jesse Pinkman.</p>
-        
-        
-        <h5>Características</h5> <!--Subtítulo H5-->
+            <h4>Descripción</h4> <!--Subtítulo H4-->
 
-        <ol> <!--Lista con elementos ordenados por número-->
-
-            <li>Género: Drama Criminal.</li> <!--li se utiliza para indicar que el texto pertenece a la lista-->
-            <li>5 temporadas y 62 episodios.</li>
-            <li>Se desarrolla en Albuquerque.</li>
-            <li>Catalogada como la mejor serie de la historia.</li>
-
-        </ol>
-
-
-        <h5>Datos Curiosos</h5> <!--Subtítulo H5-->
-
-        <ul> <!--Realiza una lista desordenada (sin numeración)-->
-
-            <li>Al inicio cuestionaron a Vince por querer tomar a Bryan Cranston como protagonista, ya que lo solían ver como un personaje torpe y divertido, debido a la serie de Malcolm in the Middle, sin embargo este acabó realizando una excelente actuación.</li>
-            <li>El episodio 14 de la temporada 5 llamado "Ozymandias" obtuvo y mantuvo una calificación perfecta (10/10) durante 13 años en la plataforma de IMDb.</li>
-            <li>La serie presta atención a detalles muy pequeños pero importantes, como por ejemplo:</li>
+            <!--Párrafo para texto largo o corto-->
+            <p>Esta serie narra la historia de Walter White, un profesor de química de 50 años diágnosticado con cáncer de pulmón, este piensa que no tiene nada que perder, por lo que para pagar su tratamiento y asegurar un buen futuro para su familia, utiliza sus destrezas en la química para cocinar y vender metanfetamina junto a Jesse Pinkman.</p>
             
-            <ol> <!--Se "anida" una lista dentro de otra-->
-                
-                <li>El episodio final es titulado "Felina", ya que es un anagrama de la palabra "Finale", además de que incluye 3 elementos químicos con un impacto importante en la serie:</li>
-                
-                <ul>
-                    <li>Fe (Hierro en la sangre).</li>
-                    <li>Li (Litio en la metanfetamina).</li>
-                    <li>Na (Sodio en las lágrimas).</li>
-                </ul>
-                
-                <li>La serie tiene 62 epidodios, y el elemento #62 de la tabla periódica es el samario, el cual es utilizado para tratar el cáncer.</li>
-                <li>El episodio "Ozymandias" hace referencia a un poema, que narra la caída de un rey poderoso y la inevitable decadencia del poder, lo que es similar a lo que sucede en el capítulo.</li>
             
+            <h5>Características</h5> <!--Subtítulo H5-->
+
+            <ol> <!--Lista con elementos ordenados por número-->
+
+                <li>Género: Drama Criminal.</li> <!--li se utiliza para indicar que el texto pertenece a la lista-->
+                <li>5 temporadas y 62 episodios.</li>
+                <li>Se desarrolla en Albuquerque.</li>
+                <li>Catalogada como la mejor serie de la historia.</li>
+
             </ol>
-       
-        </ul>
 
-        <!--Permite agregar imágenes a la página web, y el atributo alt actúa como información para el lector de página-->
-        <img src="src\img\Breaking Bad.webp" alt="Walter White y Jesse Pinkman en sus trajes para cocinar">
 
+            <h5>Datos Curiosos</h5> <!--Subtítulo H5-->
+
+            <ul> <!--Realiza una lista desordenada (sin numeración)-->
+
+                <li>Al inicio cuestionaron a Vince por querer tomar a Bryan Cranston como protagonista, ya que lo solían ver como un personaje torpe y divertido, debido a la serie de Malcolm in the Middle, sin embargo este acabó realizando una excelente actuación.</li>
+                <li>El episodio 14 de la temporada 5 llamado "Ozymandias" obtuvo y mantuvo una calificación perfecta (10/10) durante 13 años en la plataforma de IMDb.</li>
+                <li>La serie presta atención a detalles muy pequeños pero importantes, como por ejemplo:</li>
+                
+                <ol> <!--Se "anida" una lista dentro de otra-->
+                    
+                    <li>El episodio final es titulado "Felina", ya que es un anagrama de la palabra "Finale", además de que incluye 3 elementos químicos con un impacto importante en la serie:</li>
+                    
+                    <ul>
+                        <li>Fe (Hierro en la sangre).</li>
+                        <li>Li (Litio en la metanfetamina).</li>
+                        <li>Na (Sodio en las lágrimas).</li>
+                    </ul>
+                    
+                    <li>La serie tiene 62 epidodios, y el elemento #62 de la tabla periódica es el samario, el cual es utilizado para tratar el cáncer de pulmón.</li>
+                    <li>El episodio "Ozymandias" hace referencia a un poema, que narra la caída de un rey poderoso y la inevitable decadencia del poder, lo que es similar a lo que sucede en el capítulo.</li>
+                
+                </ol>
+        
+            </ul>
+
+            <!--Permite agregar imágenes a la página web, y el atributo alt actúa como información para el lector de página-->
+            <img src="src\img\Breaking Bad.webp" alt="Walter White y Jesse Pinkman en sus trajes para cocinar">
+
+        </section>
+        
         <hr> <!--Línea de separación horizontal-->
 
-        <h3 id="BetterCallSaul"><i class="fa-solid fa-scale-unbalanced-flip" aria-hidden="true"></i>Better Call Saul!</h3> <!--Subtítulo H3-->
+        <section id="BetterCallSaul" aria-labelledby="titulo-bcs">
+
+            <h3 id="titulo-bcs"><i class="fa-solid fa-scale-unbalanced-flip" aria-hidden="true"></i>Better Call Saul!</h3> <!--Subtítulo H3-->
         
-        <h4>Descripción</h4> <!--Subtítulo H4-->
-        
-        <!--Párrafo para texto-->
-        <p>Esta serie es un spin-off de Breaking Bad, a su vez es una precuela, y secuela en sus últimos 4 capítulos, en esta serie se narra la historia de Jimmy McGill, quien solía ser estafador en su juventud, pero gracias a la necesidad de hacer que su hermano se sintiese orgulloso de él, se convierte en abogado, el declive moral lo lleva a convertirse en "Saul Goodman", o mejor conocido como el abogado criminal.</p>
-       
-        <h5>Características</h5> <!--Subtítulo H5-->
-
-        <ol>
-
-            <li>Género: Drama Criminal</li>
-            <li>6 temporadas y 63 episodios</li>
-            <li>Se desarrolla en Albuquerque</li>
-            <li>Por algunas personas es considerada mejor que Breaking Bad</li>
-        
-        </ol>
-
-        <h5>Datos Curiosos</h5> <!--Subtítulo H5-->
-
-        <ul> <!--Realiza una lista desordenada (sin numeración)-->
-
-            <li>Al inicio cuestionaron si realizar la serie o no, ya que Saul Goodman era un persona increíble en Breaking Bad, sin embargo, realizar una una serie de "abogados" se veía poco prometedor, en base a las expectativas generadas por Breaking Bad.</li>
-            <li>La serie a diferencia de Breaking Bad, se enfoca más en dar transfondo a los personajes de la serie, haciendo un balance entre la historia de Jimmy, y la historia del cartel de los Salamancas, incluyendo a Gustavo Fring.</li>
-            <li>La serie presta atención a detalles muy pequeños pero importantes, como por ejemplo:</li>
+            <h4>Descripción</h4> <!--Subtítulo H4-->
             
-            <ol> <!--Se "anida" una lista dentro de otra-->
+            <!--Párrafo para texto-->
+            <p>Esta serie es un spin-off de Breaking Bad, a su vez es una precuela, y secuela en sus últimos 4 capítulos, en esta serie se narra la historia de Jimmy McGill, quien solía ser estafador en su juventud, pero gracias a la necesidad de hacer que su hermano se sintiese orgulloso de él, se convierte en abogado, el declive moral lo lleva a convertirse en "Saul Goodman", o mejor conocido como el abogado criminal.</p>
+        
+            <h5>Características</h5> <!--Subtítulo H5-->
 
-                <li>En el episodio "The guy for this", se ve como Jimmy deja caer un cono, el cual posteriormente es devorado por hormigas, lo que puede ser interpretado como una metafora, siendo Jimmy el cono y las hormigas los negocios ilegales.</li>
-                
-                <img src="src\img\Helado.webp" alt="Muestra como Jimmy es consumido por negocios ilegales">
-                
-                <li>La serie brinda un punto de vista muy diferente al que se tenía en Breaking Bad, e impacta mucho en la misma, por lo que volver a ver Breaking Bad luego de Better Call Saul permitirá al usuario entender de mejor manera el porqué sucedían ciertas cosas, además de comprender de manera más profunda el personaje de Saul Goodman.</li>
-                <li>Al igual que en Breaking Bad, en esta serie se tocan mucho temas de poder, y la decadencia del mismo, donde el protagonista se mantiene entre el bien y el mal a lo largo de la serie "aumentando" su poder.</li>
+            <ol>
+
+                <li>Género: Drama Criminal</li>
+                <li>6 temporadas y 63 episodios</li>
+                <li>Se desarrolla en Albuquerque</li>
+                <li>Por algunas personas es considerada mejor que Breaking Bad</li>
             
             </ol>
+
+            <h5>Datos Curiosos</h5> <!--Subtítulo H5-->
+
+            <ul> <!--Realiza una lista desordenada (sin numeración)-->
+
+                <li>Al inicio cuestionaron si realizar la serie o no, ya que Saul Goodman era un persona increíble en Breaking Bad, sin embargo, realizar una una serie de "abogados" se veía poco prometedor, en base a las expectativas generadas por Breaking Bad.</li>
+                <li>La serie a diferencia de Breaking Bad, se enfoca más en dar transfondo a los personajes de la serie, haciendo un balance entre la historia de Jimmy, y la historia del cartel de los Salamancas, incluyendo a Gustavo Fring.</li>
+                <li>La serie presta atención a detalles muy pequeños pero importantes, como por ejemplo:</li>
+                
+                <ol> <!--Se "anida" una lista dentro de otra-->
+
+                    <li>En el episodio "The guy for this", se ve como Jimmy deja caer un cono, el cual posteriormente es devorado por hormigas, lo que puede ser interpretado como una metafora, siendo Jimmy el cono y las hormigas los negocios ilegales.
+                    
+                        <figure>
+                            <img src="src\img\Helado.webp" 
+                                alt="Cono de helado cayendo al suelo rodeado por hormigas">
+                            <figcaption>
+                                El cono representa a Jimmy siendo consumido por los negocios ilegales.
+                            </figcaption>
+                        </figure>
+                    </li>
+                    
+                    
+                    <li>La serie brinda un punto de vista muy diferente al que se tenía en Breaking Bad, e impacta mucho en la misma, por lo que volver a ver Breaking Bad luego de Better Call Saul permitirá al usuario entender de mejor manera el porqué sucedían ciertas cosas, además de comprender de manera más profunda el personaje de Saul Goodman.</li>
+                    <li>Al igual que en Breaking Bad, en esta serie se tocan mucho temas de poder, y la decadencia del mismo, donde el protagonista se mantiene entre el bien y el mal a lo largo de la serie "aumentando" su poder.</li>
+                
+                </ol>
+            
+            </ul>
+
+            <img src="src\img\Better Call Saul.webp" alt="Jimmy McGill en medio de los dos mundos de la historia, entre bufetes y carteles">
+
+            <p>La serie de Better Call Saul es reconocida por una canción muy particular, la cual refleja la situación sentimental del personaje principal (Jimmy McGill) y su pareja (Kim Wexler).</p>
+            
+            <p><i class="fa-brands fa-itunes-note" aria-hidden="true"></i>La canción es: Somethin' Stupid, y la puede escuchar a continuación:</p>
+
+            <audio 
+                src="src\mp3\Frank Sinatra, Nancy Sinatra - Somethin' Stupid (Audio).mp3" controls aria-label="Somethin' Stupid - Frank Sinatra y Nancy Sinatra"> <!--Controls le da potestad al usuario de cuando reproducirlo si así lo desea-->
+                Su navegador no soporta este elemento de audio. <!--En caso de no ser soportado por el navegador-->
+            </audio> <!--Permite utilizar archivos multimedia como audios (formato mp3)-->
+
+
+        </section>
         
-        </ul>
-
-        <img src="src\img\Better Call Saul.webp" alt="Jimmy McGill en medio de los 2 mundos de la historia, entre bufetes y carteles">
-
-        <p>La serie de Better Call Saul es reconocida por una canción muy particular, la cual refleja la situación sentimental del personaje principal (Jimmy McGill) y su pareja (Kim Wexler).</p>
-        <i class="fa-brands fa-itunes-note" aria-hidden="true"></i>
-        <p>La canción es: Somethin' Stupid, y la puede escuchar a continuación:</p>
-
-        <audio 
-            src="src\mp3\Frank Sinatra, Nancy Sinatra - Somethin' Stupid (Audio).mp3" controls> <!--Controls le da potestad al usuario de cuando reproducirlo si así lo desea-->
-            Su navegador no soporta este elemento de audio. <!--En caso de no ser soportado por el navegador-->
-        </audio> <!--Permite utilizar archivos multimedia como audios (formato mp3)-->
-
         <hr> <!--Línea de separación horizontal-->
 
         <!--Tabla que compara ambas series-->
@@ -159,15 +226,15 @@
             <!--Fila principal de la tabla-->
             <thead> <!--Indica que es el encabezado de la tabla-->
                 <tr> <!--Fila 1-->
-                    <th>Serie</th> <!--th: Encabezado-->
-                    <th>Temporada</th> 
-                    <th>Capítulo</th>
-                    <th>Nombre</th>
-                    <th>Rating</th>
+                    <th scope="col">Serie</th> <!--th: Encabezado-->
+                    <th scope="col">Temporada</th> 
+                    <th scope="col">Capítulo</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Rating</th> <!--EL scope="col" indica a los lectores de pantalla que cada encabezado corresponde a su columna, mejorando la navegación.-->
                 </tr> 
             </thead>
             
-            <tbody> <!--Indica  que es eel cuerpo de datos de la tabla-->
+            <tbody> <!--Indica  que es el cuerpo de datos de la tabla-->
                 <!--Fila 2-->
                 <tr>
                     <td>Breaking Bad</td> <!--td: Dato común parte de un encabezado-->
@@ -229,7 +296,7 @@
 
     <!--Footer, contiene información de contacto y derechos de autor-->
     <footer>
-        <a href="https://www.netflix.com/cr-en/title/70143836">¡Mire Breaing Bad aquí!</a>
+        <a href="https://www.netflix.com/cr-en/title/70143836">¡Mire Breaking Bad aquí!</a>
         <a href="https://www.netflix.com/cr-en/title/80021955">¡Mire Better Call Saul aquí!</a>
         <p>Contacto: sloriac@gmail.com</p>
         <p>&copy; 2026 santiago Loría C. Todos los derechos reservados.</p>
@@ -237,13 +304,3 @@
     
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-<!--Quedé en realizar correciones de este archivo y análisis de IA-->

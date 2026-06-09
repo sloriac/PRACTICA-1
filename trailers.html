@@ -9,6 +9,49 @@
 
 
 <body>
+
+
+    <!-- === INFORME SOBRE RECOMENDACIONES DADAS POR IA === 
+    -IA utilizada: Claude Sonnet 4.6
+
+    === RECOMENDACIONES PARA LA PÁGINA "trailers.html" ===
+    
+    === RECOMENDACIONES CONCRETAS Y APLICADAS AL CÓDIGO === 
+    -1 Corregir lang al idioma real del contenido (español).
+    -2 Separar el <a> del <h2>.
+    -3 Agregar <nav> con enlace de regreso a la página principal.
+    -4 Mejorar el <title> de la página.
+    -5 Agregar footer para consistencia estructural. 
+    
+    === INFORME PERSONAL SOBRE RECOMENDACIONES BRINDADAS ===
+    -Honestamente considero que Claude acertó eficazmente las debilidades encontradas en la el código de 
+    la página web "trailers.html", además de mencionar elementos estructurales faltantes para poder contar
+    con la la correcta estructura del modelo HTML5, no estaba enterado sobre el error de "anidar" el <h2>
+    dentro de <a>, pensé que podría ser utilizado de esa manera sin problema para destacar enlaces de una
+    forma más notoria y accesible para el usuario, tampoco coloqué etiqueta de navegación, lo cual es un 
+    problema bastante grave, ya que la estructura HTML5 está incompleta, y el usuario no tiene como volver
+    a la página principal "practica1.html", lo que considero un error bastante importante, tampoco agregué
+    la etiqueta <footer>, ya que como mencioné anteriormente, no realicé el archivo/página con próposito de
+    perfección o con muchos detalles, sino más para utilizar enlaces externos al documento principal,
+    tampoco utilicé etiquetas de <section> o <article>, ya que no los conocía previamente, sin embargo, las
+    agregué posteriormente, el error de lenguaje fue un detalle bastante importante que pasé por alto, en 
+    este documento no se incluyen archivos multimedia por lo que no aplican los criterios de accesibilidad,
+    en conclusión, las recomendaciones y observaciones que me ofreció Claude fueron de bastante utilidad, ya
+    que aprendí que debo tener mas cautela con la estructura HTML5, con el lenguaje de la página, y separar 
+    los <h2> de los <a>, personalmente aplico todas las recomendaciones que me brindó, ya que están acertadas,
+    y bien aplicadas según las recomendaciones y la estructura del modelo HTML5, también denota errores 
+    importantes claves en la estructura del código, además de resaltar las fortalezas, por lo que me encuentro
+    de acuerdo en relación a las observaciones realizadas por Claude, no identifiqué sesgos o errores en la 
+    respuesta, ya que las recomendaciones fueron bastante estrictas en base al modelo HTML5, a su vez que
+    mejoraba la interacción del usuario co la página, eliminando sesgos de mi parte.-->
+
+    <!-- 
+        VERIFICACIÓN DE CRITERIOS: 
+        - Requerimientos: Se incluyen header, nav, main, footer. 
+        - Validación: Se probó en Chrome, Brave y Edge. Todos los enlaces y archivos multimedia funcionan. 
+    --> 
+
+
     <header>
         <h1>Vea aquí los trailers a las series Breaking Bad y Better Call Saul!</h1>
     </header>
@@ -40,10 +83,6 @@
             </a>
         </section>
        
-        
-        
-        
-
     </main>
 
     <footer>
@@ -64,72 +103,3 @@
 
 
 
-<!-- === INFORME SOBRE RECOMENDACIONES DADAS POR IA === 
- -IA utilizada: Claude Sonnet 4.6
-
- === RECOMENDACIONES PARA LA PÁGINA "trailers.html" ===
- 
-
- === USO SEMÁNTICO DE ETIQUETAS HTML5 ===
- -Claude me mencionó que utilicé de manera correcta las etiquetas: <header> <main> <h1>.
-
- -Claude me mencionó que la etiqueta <a> envolvía a la etiqueta <h2>, lo que se define como error en la estructura de HTML5, ya que los encabezados no deben ser "hijos directos de un enlace".
-
- -Al inicio, no puse mucho esfuerzo en la página "secundaria", únicamente la utilicé para colocar los links a los trailers, sin seguir una estructura muy estricta, por lo que destacó varios errores en el archivo "trailers.html":
-
- -Falta la etiqueta <nav> en la página, al no haber navegación de regreso a la página principal, se rompe la experiencia de usuario, ya que queda "atascado" en la página de trailers.
-
- -Falta la etiqueta <footer> por lo que la estructura queda incompleta.
-
- -Falta etiqueta <section> o <article>, menciona que cada trailer debería estar agrupado en un bloque semántico propio.
-
- -Mencionó que el lenguaje en la página secundaria es incorrecto, ya que está en "en", al ser contenido en español debería estar en "es".
-
-
-
- === ACCESIBILIDAD === 
- -No aplica los tributos alt en imágenes debido a que no hay.
-
- -No se utilizan íconos en la página por lo que no aplica el "aria-hidden".
-
- -En base a la navegación por teclado, menciona que los <a> son focusables por teclado de forma nativa, pero al envolver un <h2> en un <a> pel lector de pantalla puede leer el encabezado como elemento de navegación y como estructura de contenido al mismo tiempo, lo que genera un "duplicado".
- 
- -Únicamente menciona que los enlaces son externos, a youtube, no elementos de multimedia, como las etiquetas <video> o <ifrmae>, además de que no incluye controles.
- 
-        
-
- === ERRORES QUE AFECTAN LECTORES DE PANTALLA === 
- -Error en la etiqueta <a> conteniendo <h2>, menciona que el modelo de contenido HTML5 prohíbe elementos de flujo como <h2> dento de <a> cuando este está en contexto de párrafo.
- 
- -Error de idioma mencionado anteriormente.
- 
-
-
- === RECOMENDACIONES CONCRETAS === 
- -1 Corregir lang al idioma real del contenido (español).
- -2 Separar el <a> del <h2>.
- -3 Agregar <nav> con enlace de regreso a la página principal.
- -4 Mejorar el <title> de la página.
- -5 Agregar footer para consistencia estructural. 
- 
- === INFORME PERSONAL SOBRE RECOMENDACIONES BRINDADAS ===
- -Honestamente considero que Claude acertó eficazmente las debilidades encontradas en la el código de 
- la página web "trailers.html", además de mencionar elementos estructurales faltantes para poder contar
- con la la correcta estructura del modelo HTML5, no estaba enterado sobre el error de "anidar" el <h2>
- dentro de <a>, pensé que podría ser utilizado de esa manera sin problema para destacar enlaces de una
- forma más notoria y accesible para el usuario, tampoco coloqué etiqueta de navegación, lo cual es un 
- problema bastante grave, ya que la estructura HTML5 está incompleta, y el usuario no tiene como volver
- a la página principal "practica1.html", lo que considero un error bastante importante, tampoco agregué
- la etiqueta <footer>, ya que como mencioné anteriormente, no realicé el archivo/página con próposito de
- perfección o con muchos detalles, sino más para utilizar enlaces externos al documento principal,
- tampoco utilicé etiquetas de <section> o <article>, ya que no los conocía previamente, sin embargo, las
- agregué posteriormente, el error de lenguaje fue un detalle bastante importante que pasé por alto, en 
- este documento no se incluyen archivos multimedia por lo que no aplican los criterios de accesibilidad,
- en conclusión, las recomendaciones y observaciones que me ofreció Claude fueron de bastante utilidad, ya
- que aprendí que debo tener mas cautela con la estructura HTML5, con el lenguaje de la página, y separar 
- los <h2> de los <a>, personalmente aplico todas las recomendaciones que me brindó, ya que están acertadas,
- y bien aplicadas según las recomendaciones y la estructura del modelo HTML5, también denota errores 
- importantes claves en la estructura del código, además de resaltar las fortalezas, por lo que me encuentro
- de acuerdo en relación a las observaciones realizadas por Claude, no identifiqué sesgos o errores en la 
- respuesta, ya que las recomendaciones fueron bastante estrictas en base al modelo HTML5, a su vez que
- mejoraba la interacción del usuario co la página, eliminando sesgos de mi parte.-->
